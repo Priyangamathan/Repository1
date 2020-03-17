@@ -1,0 +1,154 @@
+<!DocType html>
+<html>
+<head>
+<title>Bus Details page</title>
+<style> 
+     *{
+       margin:0;
+       padding:0;
+     }
+ .d2{
+       width:390px;
+       height:540px;
+       position:relative;
+       margin:4% auto;
+       background:#fff;
+       padding:10px;
+     }
+ .d3{
+       width:175px;
+       margin:35px auto;
+       position:relative;
+       box-shadow:0 0 20px 9px #ff61241f;
+       border-radius:30px;
+	 } 
+  .b2{
+	   margin:auto;
+       padding:10px 42px;
+       background:linear-gradient(to right,#ff105f,#ffad06);
+       border:0;
+       outline:none;
+       position:absolute;
+	   border-radius:30px;
+      }	 
+   #b1{
+      top:0;
+      left:0;
+      position:absolute;
+      width:110px;
+      height:100%;
+      background:linear-gradient(to right,#ff105f,#ffad06);
+      border-radius:30px;
+      transition:.5s; 
+	  }
+   .f1{
+       top:130px;
+	   position:absolute;
+	   right:20px;
+	   width:335px;
+	   transition:.5s;
+	   }
+   .d1{
+   height:110%;
+   width:100%;
+   background-image:linear-gradient(-45deg,#ff105f,#ffad06);
+   background-position:center;
+   background-size:cover;
+   position:absolute;
+   }
+  .u{
+   width:85%;
+   padding:5px;
+   margin: 10px 0;                      
+   border-left:8px;
+   border-right:0;
+   border-bottom:1px solid #999;
+   border-top:0;
+   outline: none;
+   background: transparent;
+   }
+  .p1{
+  width:85%;
+  padding:10px 30px;
+  cursor:pointer;
+  margin:auto;
+  background:linear-gradient(to right,#ff105f,#ffad06);
+  border:0;
+  outline:none;
+  border-radius:30px;
+  }
+  .p2{
+  width:85%;
+  padding:10px 30px;
+  cursor:pointer;
+  margin:auto;
+  background:linear-gradient(to right,#ff105f,#ffad06);
+  border:0;
+  outline:none;
+  border-radius:30px;
+  }
+  /* Style the header */
+.header {
+  background-color: #E0FFFF;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #00BFFF;
+  background-color: #00008B;
+  }
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 25px 135px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #00BFFF;
+  color: black;
+}
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>PSNA COLLEGE OF ENGINEERING AND TECHNOLOGY</h1>
+</div>
+
+<div class="topnav">
+  <a href="navi.html">Home</a>
+  <a href="about.html">About us</a>
+  <a href="#">Feedback</a>
+  <a href="#">Contact us</a>
+</div>
+
+<div class="d1">
+<div class="d2">
+<div class="d3">
+<div id="b1">
+</div>
+<button type="button" class="b2">Bus Details</button>
+</div>
+<form method="post" class="f1" >
+ <input type="text" class="u" placeholder="Bus Name" required><br>
+ <input type="number" class="u" placeholder="Bus Number" required><br>
+ <input type="text" class="u" placeholder="Driver Name" required><br>
+ <input type="number"  class="u" placeholder="Driver Phone Number" required><br>
+ <br>
+ <br>
+ <input type="Submit" value="Submit" class="p1"><br><br>
+ <input type="Reset" value="Reset" class="p2">
+ </form>
+</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Login and Register page</title>
+<style> 
+     *{
+       margin:0;
+       padding:0;
+     }
+ .d2{
+       width:390px;
+       height:540px;
+       position: relative;
+       margin:4% auto;
+       background:#fff;
+       padding:10px;
+	   overflow:hidden;
+     }
+ .d3{
+       width:220px;
+       margin:35px auto;
+       position:relative;
+       box-shadow:0 0 20px 9px #ff61241f;
+       border-radius:30px;
+	 } 
+  .toggleb1{
+       padding:10px 30px;
+       cursor:pointer;
+       background:transparent;
+       border:0;
+       outline:none;
+       position:relative;
+      }	 
+   #b1{
+      top:0;
+      left:0;
+      position:absolute;
+      width:110px;
+      height:100%;
+      background:linear-gradient(to right,#00BFFF,#0000FF);
+      border-radius:30px;
+      transition:.5s; 
+	  }
+   .f1{
+       top:120px;
+	   position:absolute;
+	   width:370px;
+	   transition:.5s;
+	   }
+   .d1{
+   height:110%;
+   width:100%;
+   background-image:linear-gradient(45deg,#00BFFF,#0000FF);
+   background-position:center;
+   background-size:cover;
+   position:absolute;
+   }
+  .u{
+   width:75%;
+   padding:5px;
+   margin: 10px 0;                      
+   border-left:8px;
+   border-right:0;
+   border-bottom:1px solid #999;
+   border-top:0;
+   outline: none;
+   background: transparent;
+   }
+  .p1{
+  width:70%;
+  padding:10px 30px;
+  cursor:pointer;
+  margin:auto;
+  background:linear-gradient(to right,#00BFFF,#0000FF);
+  border:0;
+  outline:none;
+  border-radius:30px;
+  }
+  .p2{
+  width:70%;
+  padding:10px 30px;
+  cursor:pointer;
+  display:black;
+  margin:auto;
+  background:linear-gradient(to right,#00BFFF,#0000FF);
+  border:0;
+  outline:none;
+  border-radius:30px;
+  }
+  #l{
+  left:50px;
+  }
+  #r{
+  left:450px;
+  }
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  background-color: #E0FFFF;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #00BFFF;
+  background-color: #00008B;
+  }
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 25px 135px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #00BFFF;
+  color: black;
+}
+</style>
+</head>
+<body style background-color: #E6E6FA;>
+
+<div class="header">
+  <h1>PSNA COLLEGE OF ENGINEERING AND TECHNOLOGY</h1>
+</div>
+
+<div class="topnav">
+  <a href="navi.html">Home</a>
+  <a href="about.html">About us</a>
+  <a href="#">Feedback</a>
+  <a href="#">Contact us</a>
+</div>
+
+</style>	
+</head>
+<body>
+<div class="d1">
+<div class="d2">
+<div class="d3">
+<div id="b1">
+</div>
+<button type="button" class="toggleb1" onclick="login()"> Login </button>
+<button type="button" class="toggleb1" onclick="register()"> Register </button>
+</div>
+
+<form method="post" class="f1" id="l" action="location.html">
+ <input type="email" class="u" placeholder="Enter User Id">
+ <input type="password" class="u" placeholder="Enter Password" required>
+ 
+<br>
+<br>
+<input type="checkbox"> Remember Password 
+<br>
+<br>
+<input type="Submit" value="Login" class="p1"><br><br>
+<input type="Reset" value="Reset" class="p2">
+</form>
+
+<form method="post" class="f1" id="r">
+ <input type="text" class="u" placeholder="User Name" required>
+ <input type="text" class="u" placeholder="Dept/year">
+ <input type="text" class="u" placeholder="Bus stop" required>
+ <input type="email" class="u" placeholder="User Id" required>
+ <input type="password" class="u" placeholder="Password" required>
+ <input type="number" class="u" placeholder="Student Mobile Number" required>
+ <input type="number" class="u" placeholder="Parent Mobile Number" required>
+<br>
+<br>
+<input type="checkbox"> I agree to the terms & conditions. 
+<br>
+ <br>
+<input type="Submit" value="Register" class="p1">
+</form>
+
+</div>
+</div>
+<script>
+var x=document.getElementById("l");
+var y=document.getElementById("r");
+var z=document.getElementById("b1");
+function register(){
+x.style.left="-450px";
+y.style.left="50px";
+z.style.left="110px";
+}
+function login(){
+x.style.left="50px";
+y.style.left="450px";
+z.style.left="0px";
+}
+
+</script>
+</body>
+</html>
